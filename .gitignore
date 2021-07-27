@@ -1,0 +1,5 @@
+node_modules
+
+/home-assistant/config/*
+
+!.gitkeep

@@ -1,0 +1,17 @@
+version: '3'
+services:
+  homeassistant:
+    container_name: home-assistant
+    image: homeassistant/home-assistant:latest
+    restart: unless-stopped
+    volumes:
+      - ./home-assistant/config:/config
+    ports:
+      - 8123:8123
+  mqtt:
+    container_name: mqtt-server
+    image: "emqx/emqx:latest"
+    restart: unless-stopped
+    ports:
+      - 1883:1883
+      - 18083:18083 
