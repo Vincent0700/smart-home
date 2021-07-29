@@ -6,10 +6,11 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "start": "docker-compose up -d",
-    "stop": "docker-compose down",
-    "restart": "docker-compose restart",
-    "lint": "eslint ./mqtt-repeater --fix"
+    "start:compose": "docker-compose up -d",
+    "start:server": "node server/src",
+    "start:bme280": "./devices/bme280/upload.sh",
+    "stop:compose": "docker-compose down",
+    "lint": "eslint ./server --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",

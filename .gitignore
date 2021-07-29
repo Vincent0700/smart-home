@@ -1,5 +1,8 @@
-node_modules
+.DS_Store
 
-/home-assistant/config/*
+node_modules
+dist
+
+/data/*/*
 
 !.gitkeep

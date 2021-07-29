@@ -4,5 +4,6 @@
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  }
+  },
+  "arduino.commandPath": "/usr/local/bin/arduino-cli"
 }

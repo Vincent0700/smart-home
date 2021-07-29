@@ -2,5 +2,11 @@
   "mqtt": {
     "host": "192.168.1.189",
     "port": 1883
+  },
+  "influxdb": {
+    "url": "http://192.168.1.189:8086",
+    "org": "vincent0700.com",
+    "token": "tYbMMN3tjXO52M7Ejhlr_DMcdQe18UlSjgAABo1r42SxNoIpN2s0564AGjNNCuqv3L7GTPQdd26ysqh5ByVwQQ==",
+    "bucket": "sensor_data"
   }
 }

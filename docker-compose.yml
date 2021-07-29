@@ -1,17 +1,23 @@
 version: '3'
 services:
-  homeassistant:
-    container_name: home-assistant
-    image: homeassistant/home-assistant:latest
-    restart: unless-stopped
-    volumes:
-      - ./home-assistant/config:/config
-    ports:
-      - 8123:8123
-  mqtt:
-    container_name: mqtt-server
-    image: "emqx/emqx:latest"
+  emqx:
+    container_name: emqx
+    image: emqx/emqx
     restart: unless-stopped
     ports:
       - 1883:1883
-      - 18083:18083 
+      - 18083:18083
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    hostname: grafana
+    restart: always
+    ports:
+      - 3000:3000
+  influxdb:
+    image: influxdb
+    container_name: influxdb
+    ports:
+      - "8083:8083"
+      - "8086:8086"
+    restart: always

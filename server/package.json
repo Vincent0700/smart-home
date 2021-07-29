@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "node src/index.js",
+    "start": "pm2 start --name=serve node -- src/index.js",
+    "restart": "pm2 restart serve",
+    "stop": "pm2 stop serve",
+    "delete": "pm2 delete serve"
+  },
+  "devDependencies": {
+    "@influxdata/influxdb-client": "^1.15.0",
+    "chalk": "^4.1.1",
+    "mqtt": "^4.2.8",
+    "ora": "^5.4.1"
+  }
+}
