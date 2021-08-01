@@ -40,7 +40,7 @@ void WIFI_connect() {
   WiFi.begin(WLAN_SSID, WLAN_PASS);
 
   while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
+    delay(100);
     Serial.print(".");
   }
 
