@@ -2,7 +2,7 @@
 
 我家的智能家居 DIY 实践
 
-![](./imgs/grafana.png)
+![](./imgs/grafana.jpg)
 
 ## 硬件需求
 
